@@ -12,7 +12,7 @@ set_dvars()
 	{
 		for (i = 0; i < dvar_definitions["dvar_name"].size; i++)
 		{
-			if (GetDvar(dvar_definitions["dvar_name"][i]) != dvar_definitions["dvar_values"][i])
+			if (GetDvarInt(dvar_definitions["dvar_name"][i]) != dvar_definitions["dvar_values"][i])
 			{
 				SetDvar("sv_cheats",1);
 				SetDvar(dvar_definitions["dvar_name"][i], dvar_definitions["dvar_values"][i]);
